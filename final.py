@@ -15,7 +15,7 @@ with open("E:\python projects\Data Engineering\IMDb/imdb_movies.csv", "w", newli
     writer = csv.writer(file)
     writer.writerow(["IMDb ID", "Title", "Year", "Rating", "Votes", "Genre", "Description", "Country", "Director", "Writers", "URL"])
 
-    for i in range(4304, 5001):
+    for i in range(1, 5001):
         imdb_id = f"tt{i:07d}"
         url = base_url.format(i)
 
